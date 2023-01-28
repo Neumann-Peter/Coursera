@@ -1,19 +1,55 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
 
 h1 {
+    margin-top: 30px;
     text-align: center;
+    font-size: xx-large;
     margin-bottom: 30px;
 }
-p {
-    width: 90%;
-    background-color: red;
-    border: 2px solid black;
-    margin-right: auto;
-    margin-left: auto;
-    height: 150px;
+
+h2.Ingridients{
+    background-color: green;
     color: white;
+}
+
+h2.stepone{
+    background-color: blue;
+    color: white;
+}
+
+h2.steptwo{
+    background-color: red;
+    color: white;
+}
+
+.steps{
+    margin: 20px;
+    border: 3px solid grey;
+    background-color: antiquewhite;
+    position: relative;
+    height: 200px;
+}
+
+.Step-Num{
+    position: absolute;
+    border: 3px solid black;
+    top: -1px;
+    right:-1px;
+    padding: 10px;
+    width: 33.33%;
+    text-align: center
+}
+
+.description{
+    margin: 35px;
+    padding: 20px;
+    align-content: center;
 }
 
 .row {
@@ -24,8 +60,8 @@ p {
 
 @media (min-width: 992px) {
     .col-lg-4 {
-      width: 33.33%;
-      float: left
+        width: 33.33%;
+        float: left
     }
   }
 /*Medium Device: between 768px and 991px*/
@@ -33,12 +69,11 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
     .col-md-6{
         float: left;
-        border: 1px;
         width: 50%;
     }
-    .i3 {
+    .col-md-12{
+        float: left;
         width: 100%;
-        border: 1px;
     }
 }
 
